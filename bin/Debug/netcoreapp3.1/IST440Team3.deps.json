@@ -30,6 +30,7 @@
           "Microsoft.AspNetCore.Identity.UI": "3.1.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.3",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.3",
+          "PushoverNET": "1.0.28",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -881,6 +882,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "PushoverNET/1.0.28": {
+        "dependencies": {
+          "ServiceStack.Text": "5.0.2"
+        },
+        "runtime": {
+          "lib/net40/PushoverClient.dll": {
+            "assemblyVersion": "1.0.7392.25569",
+            "fileVersion": "1.0.7392.25569"
+          }
+        },
+        "compile": {
+          "lib/net40/PushoverClient.dll": {}
+        }
+      },
       "runtime.native.System/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -919,6 +934,22 @@
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
           }
+        }
+      },
+      "ServiceStack.Text/5.0.2": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.Extensions.Primitives": "3.1.3",
+          "System.Runtime": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/ServiceStack.Text.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/ServiceStack.Text.dll": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -3361,6 +3392,13 @@
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
+    "PushoverNET/1.0.28": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RYevrxRYbJajDdq8Yo76Shgs5iTvnc8ZE3fPGXf1H2h/WAY0+b+JHzFwg77mKqk1LzgoyP7GbZ18w+GLJdOMmw==",
+      "path": "pushovernet/1.0.28",
+      "hashPath": "pushovernet.1.0.28.nupkg.sha512"
+    },
     "runtime.native.System/4.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3395,6 +3433,13 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "ServiceStack.Text/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-SbgWIJYBts7pm9cotfpovTfwm8edldBtT52VM7uq3YR3CO9mvy3KTQvXQ7Na9I9kaYiq9ygT5zuu9fVFf6wkBg==",
+      "path": "servicestack.text/5.0.2",
+      "hashPath": "servicestack.text.5.0.2.nupkg.sha512"
     },
     "System.Collections/4.3.0": {
       "type": "package",

@@ -83,10 +83,9 @@ C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netco
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Google.Apis.Core.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Google.Apis.Translate.v2.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Google.Cloud.Translation.V2.dll
-C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.csproj.CoreCompileInputs.cache
-C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.Views.pdb
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.pdb
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.genruntimeconfig.cache
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\PushoverClient.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\ServiceStack.Text.dll
