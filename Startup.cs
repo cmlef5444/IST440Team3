@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using IST440Team3.Controllers;
 
 namespace IST440Team3
 {
@@ -91,6 +92,9 @@ namespace IST440Team3
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            var Controller = new Controller();
+            
 
             app.UseEndpoints(endpoints =>
             {

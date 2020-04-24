@@ -8,10 +8,14 @@ namespace IST440Team3.Models
 {
     public class CeaserCipher
     {
-        string inputText = "ghFrgh Fdhvdu";
-        string outputText;
+        public CeaserCipher()
+        {
+          //Decrypt();
+        }
+        string inputText = "Khoor Zruog";       
 
         ArrayList outputArray = new ArrayList();
+
         static char Encrypt(char ch, int code)
         {
             if (!char.IsLetter(ch)) return ch;
@@ -27,23 +31,20 @@ namespace IST440Team3.Models
 
         public ArrayList Decrypt()
         {
-            string input = "Ghfrgh Fdhvdu";
+            string input = "Khoor Zruog";
 
             int code = 1;
-            while (code <= 26)
-            {
-                
-                outputArray.Add(Encrypt(input, 26 - code));
-               
+            while (code < 26)
+            {                
+                outputArray.Add(Encrypt(input, 26 - code));               
                 code++;
             } 
             foreach(string str in outputArray)
                 {
-                    Console.WriteLine(str);
+                Console.WriteLine(str) ;
                 }
 
-            return outputArray;
-            
+            return outputArray;            
         }
     }
 
