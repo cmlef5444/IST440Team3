@@ -15,6 +15,8 @@ namespace IST440Team3.Models
     public class Transformation
     {
         public string Time { get; set; }
+        public int Id { get; set; }
+        public int CaseNumber { get; set; }
         public Transformation()
         {         
 
@@ -64,7 +66,7 @@ namespace IST440Team3.Models
                 {   
                     if(i == 21)
                     {
-                        result = page3.Add(text);
+                    result = page3.Add(text);
                     }
                     
                     elem = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);

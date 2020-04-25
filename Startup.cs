@@ -68,6 +68,9 @@ namespace IST440Team3
                 options.SlidingExpiration = true;
             });
 
+            services.AddDbContext<IST440Team3Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("IST440Team3Context")));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
