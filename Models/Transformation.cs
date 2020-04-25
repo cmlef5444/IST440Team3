@@ -28,10 +28,12 @@ namespace IST440Team3.Models
             PdfFont font = doc.AddFont(PdfStandardFont.Helvetica);
             font.Size = 15;
 
-            PdfTextElement text = new PdfTextElement(50, 50, translationInput.ToString(), font);
+            PdfTextElement text = new PdfTextElement(50, 50, "hellow world", font);
             page.Add(text);
+            PdfTextElement text2 = new PdfTextElement(50, 50, "Tine man", font);
+            page.Add(text2);
 
-            doc.Save("Cipher.Translation " + Time + ".pdf");
+            doc.Save("Cipher.Translation.pdf");
             doc.Close();
 
             return doc;

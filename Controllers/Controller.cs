@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using IST440Team3.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.IO;
 
 namespace IST440Team3.Controllers
 {
@@ -25,6 +27,8 @@ namespace IST440Team3.Controllers
          //  varCipher.Decrypt();    //returns arrayList of all 26 ciphers, is input for translate
 
         }
+
+    
         
 
     
