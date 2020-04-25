@@ -20,7 +20,12 @@ namespace IST440Team3.Models
         ArrayList outputArray = new ArrayList();
 
 
-        public Translation(ArrayList inputArray)
+        public Translation()
+        {
+            
+        }
+
+        public ArrayList TranslateText(ArrayList inputArray)
         {
             var client = TranslationClient.Create();
 
@@ -30,8 +35,9 @@ namespace IST440Team3.Models
             {
                 outputArray.Add(client.TranslateText(text, LanguageCodes.Spanish, LanguageCodes.English));
                 var response = client.TranslateText(text, LanguageCodes.Spanish, LanguageCodes.English);
-                Console.WriteLine("translation text " + response.TranslatedText);
-            }            
+                Console.WriteLine("translation text " + response.TranslatedText);   //FIX_ME: Console check, remove on final
+            }
+            return outputArray;
         }
     }
 }

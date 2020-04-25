@@ -89,3 +89,9 @@ C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netco
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.genruntimeconfig.cache
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\PushoverClient.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\ServiceStack.Text.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Select.Html.dep
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Select.Tools.dep
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Select.Pdf.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.csproj.CoreCompileInputs.cache
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cache

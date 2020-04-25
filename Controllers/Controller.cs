@@ -14,7 +14,11 @@ namespace IST440Team3.Controllers
             //login
             //tesseract module
             var varCipher = new CeaserCipher(); //decrypt module
-            var varTranslation = new Translation(varCipher.Decrypt()); //translate
+            var varTranslation = new Translation(); //translate module
+            var varTransformation = new Transformation();
+
+            varTransformation.ConvertToPdf(varTranslation.TranslateText(varCipher.Decrypt()));
+
             //transfrom (packages avaivle to convert to pdf)
             //Notification
 
