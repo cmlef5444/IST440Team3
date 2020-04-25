@@ -33,10 +33,12 @@ namespace IST440Team3.Models
 
             foreach(string text in inputArray)
             {
-                outputArray.Add(client.TranslateText(text, LanguageCodes.Spanish, LanguageCodes.English));
-                var response = client.TranslateText(text, LanguageCodes.Spanish, LanguageCodes.English);
+                //need to change languages for user nput, first is target language second is source language      
+                var response = client.TranslateText(text, LanguageCodes.English, LanguageCodes.Spanish);
                 Console.WriteLine("translation text " + response.TranslatedText);   //FIX_ME: Console check, remove on final
+                outputArray.Add(response.TranslatedText.ToString());
             }
+
             return outputArray;
         }
     }

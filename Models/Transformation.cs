@@ -2,12 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
 using SelectPdf;
-
-
-
+using ServiceStack;
+using Google.Cloud.Translation.V2;
 
 namespace IST440Team3.Models
 {
@@ -24,17 +25,59 @@ namespace IST440Team3.Models
             Time = DateTime.Today.ToShortTimeString();
             PdfDocument doc = new PdfDocument();
             PdfPage page = doc.AddPage();
+            PdfPage page2 = doc.AddPage();
+            PdfPage page3 = doc.AddPage();
 
             PdfFont font = doc.AddFont(PdfStandardFont.Helvetica);
             font.Size = 15;
 
-            PdfTextElement text = new PdfTextElement(50, 50, "hellow world", font);
-            page.Add(text);
-            PdfTextElement text2 = new PdfTextElement(50, 50, "Tine man", font);
-            page.Add(text2);
+            PdfRenderingResult result;
+
+            //PdfTextElement text = new PdfTextElement(50, 50, "hellow world", font);
+            //page.Add(text);
+            PdfTextElement text = new PdfTextElement(50, 50, "Cipher Translations", font);
+            result = page.Add(text);
+            
+            
+
+            int i = 0;
+            foreach (string str in translationInput)
+            {
+                i++;
+                PdfTextElement elem;// = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
+                if(i <= 10)
+                {
+                    elem = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
+                    result = page.Add(elem);
+                }
+                else if(i <= 20)
+                {
+                    if (i == 11)
+                    {
+                        result = page2.Add(text);
+                    }
+                    
+                    elem = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
+                    result = page2.Add(elem);
+                }
+                else if(i < 30)
+                {   
+                    if(i == 21)
+                    {
+                        result = page3.Add(text);
+                    }
+                    
+                    elem = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
+                    result = page3.Add(elem);
+                }                
+                
+            }
+
 
             doc.Save("Cipher.Translation.pdf");
             doc.Close();
+
+         
 
             return doc;
 
@@ -63,5 +106,6 @@ namespace IST440Team3.Models
             //// close pdf document
             //doc.Close();
         }
+
     }
 }

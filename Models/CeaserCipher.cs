@@ -31,7 +31,7 @@ namespace IST440Team3.Models
 
         public ArrayList Decrypt()
         {
-            string input = "Khoor Zruog";
+            string input = "Elix. Jb iixjl Fkfdl Jlkqlvx. Jxqxpqb x jf mxaob. Mobmxoxqb mxox jlofo.";
 
             int code = 1;
             while (code < 26)
