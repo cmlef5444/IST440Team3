@@ -9,6 +9,7 @@ using System.IO;
 
 namespace IST440Team3.Controllers
 {
+    //[Authorize(Roles = Admin, User)]
     public class Controller
     {
         public Controller()

@@ -17,6 +17,7 @@ namespace IST440Team3.Models
         public string Time { get; set; }
         public int Id { get; set; }
         public int CaseNumber { get; set; }
+        public string OutputLanguage { get; set; }
         public Transformation()
         {         
 

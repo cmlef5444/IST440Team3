@@ -33,8 +33,10 @@ namespace IST440Team3
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddDefaultIdentity<IdentityUser>().AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //    .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
 
             //services.AddIdentity<ApplicationUser, IdentityRole>()
@@ -77,7 +79,11 @@ namespace IST440Team3
 
             services.AddDbContext<IST440Team3Context>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("IST440Team3Context")));
-
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("RequireAdministratorRole",
+             policy => policy.RequireRole("Administrator"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
