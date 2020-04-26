@@ -35,68 +35,27 @@
                 <input asp-for="Transformation.CaseNumber" class="form-control" />
                 <span asp-validation-for="Transformation.CaseNumber" class="text-danger"></span>
             </div>
-            <div>
-            div class="form-group">
-            <label asp-for="Transformation.EvidenceNumber" class="control-label"></label>
-            <input asp-for="Transformation.EvidenceNumber" class="form-control" />
-            <span asp-validation-for="Transformation.EvidenceNumber" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Transformation.OutputLanguage" class="control-label"></label>
-        <input asp-for="Transformation.OutputLanguage" class="form-control" />
-        <span asp-validation-for="Transformation.OutputLanguage" class="text-danger"></span>
-    </div>
-    @*<div class="w3-dropdown-click">
-            <button onclick="myFunction()" class="w3-button w3-black">Click Me!</button>
-            <div id="Demo" class="w3-dropdown-content w3-bar-block w3-border">
-                <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            <div class="form-group">
+                <label asp-for="Transformation.EvidenceNumber" class="control-label"></label>
+                <input asp-for="Transformation.EvidenceNumber" class="form-control" />
+                <span asp-validation-for="Transformation.EvidenceNumber" class="text-danger"></span>
             </div>
-        </div>
-
-        <script>
-            function myFunction() {
-                var x = document.getElementById("Demo");
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                  }
-            }
-        </script>*@
-
-    <form method="post" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <button type="submit">Upload</button>
-    </form>
-
-    @*
-        If upload succeeded we will show nice message to user.
-    *@
-    @if (ViewBag.Message != null)
-    {
-        <div class="alert alert-success" style="margin-top:20px">
-            @ViewBag.Message
-        </div>
-    }
-
-    @*<form asp-controller="Home" asp-action="SingleFile" enctype="multipart/form-data" method="post">
-            <input type="file" multiple name="file" />
-            <div class="submit-holder"><input type="submit" value="Submit" class="submit-edit" /></div>
-            <div>
-                <a asp-action="Index">Back to List</a>
+            <div class="form-group">
+                <label asp-for="Transformation.OutputLanguage" class="control-label"></label>
+                <input asp-for="Transformation.OutputLanguage" class="form-control" />
+                <span asp-validation-for="Transformation.OutputLanguage" class="text-danger"></span>
+            </div>               
+            <div method="post" enctype="multipart/form-data">
+                <input type="file" name="file" />
+                @*<button type="submit">Upload</button>*@
+                <br />
+                <br />
             </div>
-        </form>*@
-    <p>
-        <br />
-    </p>
-
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-    </form>
-</div>
 </div>
 
 <div>

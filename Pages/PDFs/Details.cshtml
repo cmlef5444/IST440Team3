@@ -12,16 +12,34 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Transformation.CaseNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Transformation.CaseNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Transformation.EvidenceNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Transformation.EvidenceNumber)
+        </dd>
+        <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Transformation.Time)
         </dt>
         <dd class="col-sm-10">
             @Html.DisplayFor(model => model.Transformation.Time)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.Transformation.CaseNumber)
+            @Html.DisplayNameFor(model => model.Transformation.OrigionalLanguage)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.Transformation.CaseNumber)
+            @Html.DisplayFor(model => model.Transformation.OrigionalLanguage)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Transformation.OutputLanguage)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Transformation.OutputLanguage)
         </dd>
     </dl>
 </div>

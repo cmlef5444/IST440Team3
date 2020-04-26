@@ -25,14 +25,11 @@ namespace IST440Team3.Models
         public string OutputLanguage { get; set; }
         public Transformation()
         { 
-            Time = DateTime.Now.ToString();
-        }
-
-       
+           Time = DateTime.Now.ToString();
+        }       
 
         public PdfDocument ConvertToPdf(ArrayList translationInput)
-        {
-            
+        {            
             PdfDocument doc = new PdfDocument();
             PdfPage page = doc.AddPage();
             PdfPage page2 = doc.AddPage();
@@ -43,12 +40,8 @@ namespace IST440Team3.Models
 
             PdfRenderingResult result;
 
-            //PdfTextElement text = new PdfTextElement(50, 50, "hellow world", font);
-            //page.Add(text);
             PdfTextElement text = new PdfTextElement(50, 50, "Cipher Translations", font);
-            result = page.Add(text);
-            
-            
+            result = page.Add(text);           
 
             int i = 0;
             foreach (string str in translationInput)
@@ -65,8 +58,7 @@ namespace IST440Team3.Models
                     if (i == 11)
                     {
                         result = page2.Add(text);
-                    }
-                    
+                    }                    
                     elem = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
                     result = page2.Add(elem);
                 }
@@ -75,19 +67,13 @@ namespace IST440Team3.Models
                     if(i == 21)
                     {
                     result = page3.Add(text);
-                    }
-                    
+                    }                    
                     elem = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
                     result = page3.Add(elem);
-                }                
-                
+                }              
             }
-
-
             doc.Save("Cipher.Translation.pdf");
-            doc.Close();
-
-         
+            doc.Close();                     
 
             return doc;
 
