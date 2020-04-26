@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4auB/LsPJdpILIGwHpIPKhDl4gYmSqa0lYExJyU5aXnUb5EILa0upIaO3lpcM1YJ4EgVRYlK1LBQFyzlT+3Ztw==",
+  "dgSpecHash": "wrTeU6wPyeD+waDLdHA5QQvpaHJnNDjDmh8rhRKSqBz5mtZPDtYTR+m1clJiUQuvevMGkSE4+IlpmUMUGeCD0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\cjani\\OneDrive\\Documents\\GitHub\\IST440Team3\\IST440Team3\\IST440Team3.csproj",
   "expectedPackageFiles": [
@@ -189,7 +189,8 @@
     "C:\\Users\\cjani\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\cjani\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\cjani\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\cjani\\.nuget\\packages\\tesseract\\3.3.0\\tesseract.3.3.0.nupkg.sha512"
   ],
   "logs": [
     {

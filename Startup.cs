@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using IST440Team3.Data;
@@ -15,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using IST440Team3.Controllers;
+using Microsoft.AspNetCore.Hosting;
 
 namespace IST440Team3
 {
@@ -109,7 +109,7 @@ namespace IST440Team3
             app.UseAuthentication();
             app.UseAuthorization();
 
-            var Controller = new Controller();
+            var Controller = new PdfsController();
             
 
             app.UseEndpoints(endpoints =>

@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 using SelectPdf;
 using ServiceStack;
 using Google.Cloud.Translation.V2;
+using Microsoft.AspNetCore.Http;
+using System.Net.Http.Headers;
+
 
 namespace IST440Team3.Models
 {
@@ -17,15 +20,19 @@ namespace IST440Team3.Models
         public string Time { get; set; }
         public int Id { get; set; }
         public int CaseNumber { get; set; }
+        public int EvidenceNumber { get; set; }
+        public string OrigionalLanguage { get; set; }
         public string OutputLanguage { get; set; }
         public Transformation()
-        {         
-
+        { 
+            Time = DateTime.Now.ToString();
         }
+
+       
 
         public PdfDocument ConvertToPdf(ArrayList translationInput)
         {
-            Time = DateTime.Today.ToShortTimeString();
+            
             PdfDocument doc = new PdfDocument();
             PdfPage page = doc.AddPage();
             PdfPage page2 = doc.AddPage();

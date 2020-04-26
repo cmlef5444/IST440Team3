@@ -6,9 +6,9 @@
 }
 
 <h1>Index</h1>
-<h3>
-    Testing
-</h3>
+<p>
+    This is the database containing all converted pieces of evidence and a copy of the origional itself.
+</p>
 <p>
     <a asp-page="Create">Create New</a>
 </p>
@@ -20,7 +20,16 @@
                 @Html.DisplayNameFor(model => model.Transformation[0].CaseNumber)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Transformation[0].EvidenceNumber)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Transformation[0].Time)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transformation[0].OrigionalLanguage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Transformation[0].OutputLanguage)
             </th>
             <th></th>
         </tr>
@@ -28,11 +37,21 @@
     <tbody>
 @foreach (var item in Model.Transformation) {
         <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.CaseNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EvidenceNumber)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Time)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.CaseNumber)
+                @Html.DisplayFor(modelItem => item.OrigionalLanguage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OutputLanguage)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |

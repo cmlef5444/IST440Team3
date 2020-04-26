@@ -3,14 +3,16 @@ using IST440Team3.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace IST440Team3.Migrations
 {
     [DbContext(typeof(IST440Team3Context))]
-    partial class IST440Team3ContextModelSnapshot : ModelSnapshot
+    [Migration("20200425193807_v2")]
+    partial class v2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -27,12 +29,6 @@ namespace IST440Team3.Migrations
 
                     b.Property<int>("CaseNumber")
                         .HasColumnType("int");
-
-                    b.Property<int>("EvidenceNumber")
-                        .HasColumnType("int");
-
-                    b.Property<string>("OrigionalLanguage")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OutputLanguage")
                         .HasColumnType("nvarchar(max)");

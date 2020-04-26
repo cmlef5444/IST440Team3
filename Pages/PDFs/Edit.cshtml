@@ -13,16 +13,22 @@
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Transformation.Time" class="control-label"></label>
-                <input asp-for="Transformation.Time" class="form-control" />
-                <span asp-validation-for="Transformation.Time" class="text-danger"></span>
-            </div>
+
             <input type="hidden" asp-for="Transformation.Id" />
             <div class="form-group">
                 <label asp-for="Transformation.CaseNumber" class="control-label"></label>
                 <input asp-for="Transformation.CaseNumber" class="form-control" />
                 <span asp-validation-for="Transformation.CaseNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transformation.EvidenceNumber" class="control-label"></label>
+                <input asp-for="Transformation.EvidenceNumber" class="form-control" />
+                <span asp-validation-for="Transformation.EvidenceNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Transformation.EvidenceNumber" class="control-label"></label>
+                <input asp-for="Transformation.EvidenceNumber" class="form-control" />
+                <span asp-validation-for="Transformation.EvidenceNumber" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

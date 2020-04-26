@@ -19,27 +19,45 @@ namespace IST440Team3.Models
         ArrayList inputArray = new ArrayList();
         ArrayList outputArray = new ArrayList();
 
-
+        public string OrigionalLanguage { get; set; }
+        
         public Translation()
         {
-            
+           OrigionalLanguage = "Spanish"; 
         }
+
 
         public ArrayList TranslateText(ArrayList inputArray)
         {
             var client = TranslationClient.Create();
+            
 
             Console.WriteLine("");
 
             foreach(string text in inputArray)
             {
-                //need to change languages for user nput, first is target language second is source language      
-                var response = client.TranslateText(text, LanguageCodes.English, LanguageCodes.Spanish);
-                Console.WriteLine("translation text " + response.TranslatedText);   //FIX_ME: Console check, remove on final
-                outputArray.Add(response.TranslatedText.ToString());
+                var detection = client.DetectLanguage(text);
+                //need to change languages for user nput, first is target language second is source language  
+                try
+                {
+                    var response = client.TranslateText(text, LanguageCodes.English, DetectLanguage(text).Language);
+                    Console.WriteLine("translation text " + response.TranslatedText);   //FIX_ME: Console check, remove on final
+                    outputArray.Add("Detected Language: " + DetectLanguage(text).Language + ", Inputed Text:" + response.TranslatedText.ToString());
+                }
+                catch (Google.GoogleApiException e) { }
+                
             }
 
             return outputArray;
+        }
+
+        public Detection DetectLanguage(String text)
+        {
+            TranslationClient client = TranslationClient.Create();
+            var detection = client.DetectLanguage(text);
+            Console.WriteLine($"{detection.Language}\tConfidence: {detection.Confidence}");
+                       
+            return detection;
         }
     }
 }

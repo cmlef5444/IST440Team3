@@ -185,9 +185,6 @@ C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netco
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
-C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.csproj.CoreCompileInputs.cache
-C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\Razor\Pages\PDFs\Create.cshtml.g.cs
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\Razor\Pages\PDFs\Delete.cshtml.g.cs
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\Razor\Pages\PDFs\Details.cshtml.g.cs
@@ -197,3 +194,11 @@ C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netco
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\x86\liblept1753.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\x86\libtesseract3052.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\x64\liblept1753.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\x64\libtesseract3052.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Tesseract.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.csproj.CoreCompileInputs.cache
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cache

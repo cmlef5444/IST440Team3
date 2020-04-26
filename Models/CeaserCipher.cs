@@ -12,7 +12,7 @@ namespace IST440Team3.Models
         {
           //Decrypt();
         }
-        string inputText = "Khoor Zruog";       
+        //string inputText = "Khoor Zruog";       
 
         ArrayList outputArray = new ArrayList();
 
