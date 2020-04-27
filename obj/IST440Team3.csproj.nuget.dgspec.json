@@ -78,6 +78,14 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
+            "PDFsharp-MigraDoc": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
+            "PdfSharp": {
+              "target": "Package",
+              "version": "[1.50.5147, )"
+            },
             "PushoverNET": {
               "target": "Package",
               "version": "[1.0.28, )"

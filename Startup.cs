@@ -109,7 +109,7 @@ namespace IST440Team3
             app.UseAuthentication();
             app.UseAuthorization();
 
-            var Controller = new PdfsController();
+            //var Controller = new PdfsController();
             
 
             app.UseEndpoints(endpoints =>

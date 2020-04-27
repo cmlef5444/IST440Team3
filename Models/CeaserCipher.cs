@@ -29,11 +29,11 @@ namespace IST440Team3.Models
             return new string(input.Select(ch => Encrypt(ch, code)).ToArray());
         }
 
-        public ArrayList Decrypt()
+        public ArrayList Decrypt(string input)
         {
-            string input = "Elix. Jb iixjl Fkfdl Jlkqlvx. Jxqxpqb x jf mxaob. Mobmxoxqb mxox jlofo.";
+            //string input = "Elix. Jb iixjl Fkfdl Jlkqlvx. Jxqxpqb x jf mxaob. Mobmxoxqb mxox jlofo.";
 
-            int code = 1;
+            int code = 0;
             while (code < 26)
             {                
                 outputArray.Add(Encrypt(input, 26 - code));               
@@ -41,7 +41,7 @@ namespace IST440Team3.Models
             } 
             foreach(string str in outputArray)
                 {
-                Console.WriteLine(str) ;
+                //Console.WriteLine(str) ;
                 }
 
             return outputArray;            

@@ -199,6 +199,16 @@ C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netco
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\x64\liblept1753.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\x64\libtesseract3052.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\Tesseract.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\PdfSharp.Charting.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\PdfSharp.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\de\PdfSharp.Charting.resources.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\de\PdfSharp.resources.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\MigraDoc.DocumentObjectModel.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\MigraDoc.Rendering.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\MigraDoc.RtfRendering.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\de\MigraDoc.DocumentObjectModel.resources.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\de\MigraDoc.Rendering.resources.dll
+C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\bin\Debug\netcoreapp3.1\de\MigraDoc.RtfRendering.resources.dll
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.csproj.CoreCompileInputs.cache
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\cjani\OneDrive\Documents\GitHub\IST440Team3\IST440Team3\obj\Debug\netcoreapp3.1\IST440Team3.MvcApplicationPartsAssemblyInfo.cache

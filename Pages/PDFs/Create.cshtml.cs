@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using IST440Team3.Data;
 using IST440Team3.Models;
+using IST440Team3.Controllers;
 
 namespace IST440Team3.Pages.PDFs
 {
@@ -31,6 +32,8 @@ namespace IST440Team3.Pages.PDFs
         // more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
+            
+
             if (!ModelState.IsValid)
             {
                 return Page();
@@ -38,6 +41,8 @@ namespace IST440Team3.Pages.PDFs
 
             _context.Transformation.Add(Transformation);
             await _context.SaveChangesAsync();
+
+            var PdfsController = new PdfsController(Transformation.FilePath, Transformation.CaseNumber, Transformation.EvidenceNumber);
 
             return RedirectToPage("./Index");
         }

@@ -12,10 +12,22 @@ using Google.Cloud.Translation.V2;
 using Microsoft.AspNetCore.Http;
 using System.Net.Http.Headers;
 
+using PdfSharp;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
+using PdfSharp.Pdf.IO;
+using PdfDocument = PdfSharp.Pdf.PdfDocument;
+
+using MigraDoc;
+using MigraDoc.Rendering;
+using MigraDoc.RtfRendering;
+using MigraDoc.DocumentObjectModel;
+
 namespace IST440Team3.Models
 {
     public class Transformation
     {
+        public string FilePath { get; set; }
         public string Time { get; set; }
         public int Id { get; set; }
         public int CaseNumber { get; set; }
@@ -27,15 +39,86 @@ namespace IST440Team3.Models
             
         public Transformation()
         { 
-           Time = DateTime.Now.ToString();
-        }       
+           Time = DateTime.Now.ToString();  
+        }
+        public Document ConvertToPdf3(ArrayList translationInput, int caseNumber, int evidenceNumber)
+        {
+            Document document = CreateDocument(translationInput, caseNumber, evidenceNumber);
+            document.UseCmykColor = true;
+            const bool unicode = false;
+            //const PdfFontEmbedding embedding = PdfFontEmbedding.Always;   PDFDocumentRenderer no longer requires PDFFontEmbedding
 
-        public PdfDocument ConvertToPdf(ArrayList translationInput)
-        {            
-            PdfDocument doc = new PdfDocument();
-            PdfPage page = doc.AddPage();
-            PdfPage page2 = doc.AddPage();
-            PdfPage page3 = doc.AddPage();
+            PdfDocumentRenderer pdfRenderer = new PdfDocumentRenderer(unicode);
+
+            pdfRenderer.Document = document;
+            pdfRenderer.RenderDocument();
+            string filename = "CsNum" + caseNumber + ".EviNum" + evidenceNumber + ".pdf";
+            pdfRenderer.PdfDocument.Save(filename);
+
+            return document;
+        }
+
+        static Document CreateDocument(ArrayList translationInput, int caseNumber, int evidenceNumber)
+        {
+            Document document = new Document();
+            string name = "Case #" + caseNumber + " Evidence #" + evidenceNumber;
+            Section section = document.AddSection();
+            Paragraph paragraph = section.AddParagraph(name);
+
+            string newText = "";
+            int i = 0;
+            foreach (string str in translationInput)
+            {
+                i++;
+                Console.WriteLine(i + " " + str);
+                newText = i + ": " + str;
+                section.AddParagraph(newText);
+            }
+            return document;
+        }
+
+
+        //PDFSharp - less features but same company as MigraDoc
+        public PdfDocument ConvertToPdf2(ArrayList translationInput, int caseNumber, int evidenceNumber)
+        {
+            PdfDocument document = new PdfDocument();
+
+            document.Info.Title = "Decrypted Translations";
+
+            PdfSharp.Pdf.PdfPage page = document.AddPage();
+            
+            XGraphics gfx = XGraphics.FromPdfPage(page);
+
+            XFont font = new XFont("Verdna", 11, XFontStyle.Regular);
+
+            var formatter = new PdfSharp.Drawing.Layout.XTextFormatter(gfx);
+            var rectangle = new XRect(10, 10, page.Width, page.Height);
+            string newText = "";
+            //string newText2 = "";
+            int i =  0;
+            foreach (string text in translationInput)
+            {
+                i++;
+                Console.WriteLine(i + " " + text); 
+                newText = newText + i + ". " + text + "\r\n";          
+            }            
+            formatter.DrawString(newText, font, XBrushes.Black, rectangle);
+
+            string filename = "CsNum" + caseNumber + ".EviNum" + evidenceNumber + ".pdf";
+            document.Save(filename);
+            //Process.Start(filename);
+
+            return document;
+        }
+
+        //Select.PDF.Core - deprecated (for this program) due to cost restraints
+        public SelectPdf.PdfDocument ConvertToPdf(ArrayList translationInput, int caseNumber, int evidenceNumber)
+        {
+
+            SelectPdf.PdfDocument doc = new SelectPdf.PdfDocument();
+            SelectPdf.PdfPage page = doc.AddPage();
+            SelectPdf.PdfPage page2 = doc.AddPage();
+            SelectPdf.PdfPage page3 = doc.AddPage();
 
             PdfFont font = doc.AddFont(PdfStandardFont.Helvetica);
             font.Size = 15;
@@ -74,8 +157,11 @@ namespace IST440Team3.Models
                     result = page3.Add(elem);
                 }              
             }
-            doc.Save("Cipher2.Translation.pdf");
-            doc.Close();                     
+            string name = "CsNum" + caseNumber + ".EviNum" + evidenceNumber + ".pdf";
+            doc.Save(name);
+            //string pathToSave = @"src\CipherStoreTemp";
+            //FileStream stream = System.IO.File.Create(pathToSave);
+            doc.Close();   
 
             return doc;
 
@@ -104,6 +190,5 @@ namespace IST440Team3.Models
             //// close pdf document
             //doc.Close();
         }
-
     }
 }

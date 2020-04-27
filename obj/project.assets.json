@@ -1122,6 +1122,59 @@
           "lib/netstandard1.6/NuGet.Frameworks.dll": {}
         }
       },
+      "PDFsharp/1.50.5147": {
+        "type": "package",
+        "compile": {
+          "lib/net20/PdfSharp.Charting.dll": {},
+          "lib/net20/PdfSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net20/PdfSharp.Charting.dll": {},
+          "lib/net20/PdfSharp.dll": {}
+        },
+        "resource": {
+          "lib/net20/de/PdfSharp.Charting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/PdfSharp.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "PDFsharp-MigraDoc/1.50.5147": {
+        "type": "package",
+        "compile": {
+          "lib/net20/MigraDoc.DocumentObjectModel.dll": {},
+          "lib/net20/MigraDoc.Rendering.dll": {},
+          "lib/net20/MigraDoc.RtfRendering.dll": {},
+          "lib/net20/PdfSharp.Charting.dll": {},
+          "lib/net20/PdfSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net20/MigraDoc.DocumentObjectModel.dll": {},
+          "lib/net20/MigraDoc.Rendering.dll": {},
+          "lib/net20/MigraDoc.RtfRendering.dll": {},
+          "lib/net20/PdfSharp.Charting.dll": {},
+          "lib/net20/PdfSharp.dll": {}
+        },
+        "resource": {
+          "lib/net20/de/MigraDoc.DocumentObjectModel.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/MigraDoc.Rendering.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/MigraDoc.RtfRendering.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/PdfSharp.Charting.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net20/de/PdfSharp.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
       "PushoverNET/1.0.28": {
         "type": "package",
         "dependencies": {
@@ -4850,6 +4903,49 @@
         "lib/netstandard1.6/NuGet.Frameworks.xml",
         "nuget.frameworks.4.7.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "PDFsharp/1.50.5147": {
+      "sha512": "vr5KBIqcXu2hqZ43UTwPR+jqHgMrT5tsPtJvEF+mORKoBNMh3bRWgAwic0U1sT2IVb4PR5m0GyQxnmCz8jBHWg==",
+      "type": "package",
+      "path": "pdfsharp/1.50.5147",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/PdfSharp.Charting.dll",
+        "lib/net20/PdfSharp.Charting.xml",
+        "lib/net20/PdfSharp.dll",
+        "lib/net20/PdfSharp.xml",
+        "lib/net20/de/PdfSharp.Charting.resources.dll",
+        "lib/net20/de/PdfSharp.resources.dll",
+        "pdfsharp.1.50.5147.nupkg.sha512",
+        "pdfsharp.nuspec"
+      ]
+    },
+    "PDFsharp-MigraDoc/1.50.5147": {
+      "sha512": "YMtUVAQF281GuSrQwfs4x86S6ZaWuIYdjGoRRLZWCPG45keasqSpSGtUKIQN0zRSFT9jjvScVRfAJpfRV5L8DA==",
+      "type": "package",
+      "path": "pdfsharp-migradoc/1.50.5147",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/MigraDoc.DocumentObjectModel.dll",
+        "lib/net20/MigraDoc.DocumentObjectModel.xml",
+        "lib/net20/MigraDoc.Rendering.dll",
+        "lib/net20/MigraDoc.Rendering.xml",
+        "lib/net20/MigraDoc.RtfRendering.dll",
+        "lib/net20/MigraDoc.RtfRendering.xml",
+        "lib/net20/PdfSharp.Charting.dll",
+        "lib/net20/PdfSharp.Charting.xml",
+        "lib/net20/PdfSharp.dll",
+        "lib/net20/PdfSharp.xml",
+        "lib/net20/de/MigraDoc.DocumentObjectModel.resources.dll",
+        "lib/net20/de/MigraDoc.Rendering.resources.dll",
+        "lib/net20/de/MigraDoc.RtfRendering.resources.dll",
+        "lib/net20/de/PdfSharp.Charting.resources.dll",
+        "lib/net20/de/PdfSharp.resources.dll",
+        "pdfsharp-migradoc.1.50.5147.nupkg.sha512",
+        "pdfsharp-migradoc.nuspec"
       ]
     },
     "PushoverNET/1.0.28": {
@@ -9603,6 +9699,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.3",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Utils >= 3.1.2",
+      "PDFsharp-MigraDoc >= 1.50.5147",
+      "PdfSharp >= 1.50.5147",
       "PushoverNET >= 1.0.28",
       "Select.Pdf.NetCore >= 20.1.0",
       "System.Reflection.Emit >= 4.6.0",
@@ -9687,6 +9785,14 @@
             "target": "Package",
             "version": "[3.1.2, )"
           },
+          "PDFsharp-MigraDoc": {
+            "target": "Package",
+            "version": "[1.50.5147, )"
+          },
+          "PdfSharp": {
+            "target": "Package",
+            "version": "[1.50.5147, )"
+          },
           "PushoverNET": {
             "target": "Package",
             "version": "[1.0.28, )"
@@ -9731,6 +9837,26 @@
     }
   },
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PDFsharp 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "PDFsharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'PDFsharp-MigraDoc 1.50.5147' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "libraryId": "PDFsharp-MigraDoc",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
