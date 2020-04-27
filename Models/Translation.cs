@@ -10,11 +10,6 @@ namespace IST440Team3.Models
 {
     public class Translation
     {
-        //public string ApiKey { get; set;}
-        //public int Id { get; set; }
-        //public string Text { get; set; }
-        //public string startLanguage { get; set; }
-        //public string endLanguage { get; set; }
 
         ArrayList inputArray = new ArrayList();
         ArrayList outputArray = new ArrayList();
@@ -23,31 +18,26 @@ namespace IST440Team3.Models
         
         public Translation()
         {
-           OrigionalLanguage = "Spanish"; 
+           OrigionalLanguage = "Spanish"; //Testing variable
         }
-
 
         public ArrayList TranslateText(ArrayList inputArray)
         {
-            var client = TranslationClient.Create();
-            
+            var client = TranslationClient.Create();           
 
-            Console.WriteLine("");
+            Console.WriteLine("");  //FIX_ME: Console check, remove on final
 
-            foreach(string text in inputArray)
+            foreach (string text in inputArray)
             {
                 var detection = client.DetectLanguage(text);
-                //need to change languages for user nput, first is target language second is source language  
                 try
                 {
                     var response = client.TranslateText(text, LanguageCodes.English, DetectLanguage(text).Language);
                     Console.WriteLine("translation text " + response.TranslatedText);   //FIX_ME: Console check, remove on final
                     outputArray.Add("Detected Language: " + DetectLanguage(text).Language + ", Inputed Text:" + response.TranslatedText.ToString());
                 }
-                catch (Google.GoogleApiException e) { }
-                
+                catch (Google.GoogleApiException e) { } //Catches "bad" language checks from the "gibberish" text from the Ceaser Cipher                
             }
-
             return outputArray;
         }
 

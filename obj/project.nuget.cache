@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wrTeU6wPyeD+waDLdHA5QQvpaHJnNDjDmh8rhRKSqBz5mtZPDtYTR+m1clJiUQuvevMGkSE4+IlpmUMUGeCD0w==",
+  "dgSpecHash": "rdmfBEmMYUHhLxAcgyS5Py9sPgfLxYtnsPuwnQyzMFyqkPXNaM0rShPhTh2XnKIPF3LAQHaoOipjyYldhHg9eA==",
   "success": true,
   "projectFilePath": "C:\\Users\\cjani\\OneDrive\\Documents\\GitHub\\IST440Team3\\IST440Team3\\IST440Team3.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\cjani\\.nuget\\packages\\angular-file-upload\\12.2.13\\angular-file-upload.12.2.13.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\google.api.gax\\3.0.0\\google.api.gax.3.0.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\google.api.gax.rest\\3.0.0\\google.api.gax.rest.3.0.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\google.apis\\1.44.1\\google.apis.1.44.1.nupkg.sha512",
@@ -144,7 +145,7 @@
     "C:\\Users\\cjani\\.nuget\\packages\\system.objectmodel\\4.3.0\\system.objectmodel.4.3.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\system.private.datacontractserialization\\4.3.0\\system.private.datacontractserialization.4.3.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
-    "C:\\Users\\cjani\\.nuget\\packages\\system.reflection.emit\\4.3.0\\system.reflection.emit.4.3.0.nupkg.sha512",
+    "C:\\Users\\cjani\\.nuget\\packages\\system.reflection.emit\\4.6.0\\system.reflection.emit.4.6.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\system.reflection.emit.ilgeneration\\4.3.0\\system.reflection.emit.ilgeneration.4.3.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
     "C:\\Users\\cjani\\.nuget\\packages\\system.reflection.extensions\\4.3.0\\system.reflection.extensions.4.3.0.nupkg.sha512",

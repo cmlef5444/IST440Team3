@@ -12,7 +12,6 @@ using Google.Cloud.Translation.V2;
 using Microsoft.AspNetCore.Http;
 using System.Net.Http.Headers;
 
-
 namespace IST440Team3.Models
 {
     public class Transformation
@@ -23,6 +22,9 @@ namespace IST440Team3.Models
         public int EvidenceNumber { get; set; }
         public string OrigionalLanguage { get; set; }
         public string OutputLanguage { get; set; }
+        //public IFormFile OrigionalFile { get; set; }
+        //public IFormFile DecyptedFile { get; set; }
+            
         public Transformation()
         { 
            Time = DateTime.Now.ToString();
@@ -44,11 +46,11 @@ namespace IST440Team3.Models
             result = page.Add(text);           
 
             int i = 0;
-            foreach (string str in translationInput)
+            foreach (string str in translationInput)    //if statements are a temporary code that would be changed with a paid subscription for Select.PDF
             {
                 i++;
                 PdfTextElement elem;// = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
-                if(i <= 10)
+                if(i <= 10) 
                 {
                     elem = new PdfTextElement(0, result.PdfPageLastRectangle.Bottom + 30, i + ": " + str, font);
                     result = page.Add(elem);
@@ -72,7 +74,7 @@ namespace IST440Team3.Models
                     result = page3.Add(elem);
                 }              
             }
-            doc.Save("Cipher.Translation.pdf");
+            doc.Save("Cipher2.Translation.pdf");
             doc.Close();                     
 
             return doc;

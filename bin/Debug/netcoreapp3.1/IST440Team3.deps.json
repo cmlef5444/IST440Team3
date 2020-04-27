@@ -36,7 +36,9 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Utils": "3.1.2",
           "PushoverNET": "1.0.28",
           "Select.Pdf.NetCore": "20.1.0",
+          "System.Reflection.Emit": "4.6.0",
           "Tesseract": "3.3.0",
+          "angular-file-upload": "12.2.13",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -309,6 +311,7 @@
           "IST440Team3.dll": {}
         }
       },
+      "angular-file-upload/12.2.13": {},
       "Google.Api.Gax/3.0.0": {
         "dependencies": {
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
@@ -2035,7 +2038,7 @@
           "System.Linq": "4.3.0",
           "System.ObjectModel": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit": "4.6.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Emit.Lightweight": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
@@ -2162,15 +2165,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.Emit/4.3.0": {
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
+      "System.Reflection.Emit/4.6.0": {},
       "System.Reflection.Emit.ILGeneration/4.3.0": {
         "dependencies": {
           "System.Reflection": "4.3.0",
@@ -2591,7 +2586,7 @@
           "System.IO": "4.3.0",
           "System.Linq": "4.3.0",
           "System.Reflection": "4.3.0",
-          "System.Reflection.Emit": "4.3.0",
+          "System.Reflection.Emit": "4.6.0",
           "System.Reflection.Emit.ILGeneration": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
@@ -2607,7 +2602,7 @@
       },
       "Tesseract/3.3.0": {
         "dependencies": {
-          "System.Reflection.Emit": "4.3.0"
+          "System.Reflection.Emit": "4.6.0"
         },
         "runtime": {
           "lib/netstandard2.0/Tesseract.dll": {
@@ -4211,6 +4206,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "angular-file-upload/12.2.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vPfJNUcuIpneDsYK+q+NuKYiuK4vyz57Lx1H+MRZwVmkKJ9Se/m1FPEqod823VrZfrVTAv8dcyUSLA7kKDlwXg==",
+      "path": "angular-file-upload/12.2.13",
+      "hashPath": "angular-file-upload.12.2.13.nupkg.sha512"
+    },
     "Google.Api.Gax/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -5191,12 +5193,12 @@
       "path": "system.reflection/4.3.0",
       "hashPath": "system.reflection.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.Emit/4.3.0": {
+    "System.Reflection.Emit/4.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
-      "path": "system.reflection.emit/4.3.0",
-      "hashPath": "system.reflection.emit.4.3.0.nupkg.sha512"
+      "sha512": "sha512-qAo4jyXtC9i71iElngX7P2r+zLaiHzxKwf66sc3X91tL5Ks6fnQ1vxL04o7ZSm3sYfLExySL7GN8aTpNYpU1qw==",
+      "path": "system.reflection.emit/4.6.0",
+      "hashPath": "system.reflection.emit.4.6.0.nupkg.sha512"
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
       "type": "package",

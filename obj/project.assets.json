@@ -2,6 +2,9 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "angular-file-upload/12.2.13": {
+        "type": "package"
+      },
       "Google.Api.Gax/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -2218,20 +2221,13 @@
           "ref/netstandard1.5/System.Reflection.dll": {}
         }
       },
-      "System.Reflection.Emit/4.3.0": {
+      "System.Reflection.Emit/4.6.0": {
         "type": "package",
-        "dependencies": {
-          "System.IO": "4.3.0",
-          "System.Reflection": "4.3.0",
-          "System.Reflection.Emit.ILGeneration": "4.3.0",
-          "System.Reflection.Primitives": "4.3.0",
-          "System.Runtime": "4.3.0"
-        },
         "compile": {
-          "ref/netstandard1.1/System.Reflection.Emit.dll": {}
+          "ref/netcoreapp2.0/_._": {}
         },
         "runtime": {
-          "lib/netstandard1.3/System.Reflection.Emit.dll": {}
+          "lib/netcoreapp2.0/_._": {}
         }
       },
       "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -2242,7 +2238,7 @@
           "System.Runtime": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.0/System.Reflection.Emit.ILGeneration.dll": {}
+          "ref/netstandard1.0/_._": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Reflection.Emit.ILGeneration.dll": {}
@@ -3032,6 +3028,29 @@
     }
   },
   "libraries": {
+    "angular-file-upload/12.2.13": {
+      "sha512": "vPfJNUcuIpneDsYK+q+NuKYiuK4vyz57Lx1H+MRZwVmkKJ9Se/m1FPEqod823VrZfrVTAv8dcyUSLA7kKDlwXg==",
+      "type": "package",
+      "path": "angular-file-upload/12.2.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "NuGet.exe",
+        "angular-file-upload.12.2.13.nupkg.sha512",
+        "angular-file-upload.nuspec",
+        "build.bat",
+        "content/scripts/FileAPI.flash.swf",
+        "content/scripts/FileAPI.js",
+        "content/scripts/FileAPI.min.js",
+        "content/scripts/ng-file-upload-all.js",
+        "content/scripts/ng-file-upload-all.min.js",
+        "content/scripts/ng-file-upload-shim.js",
+        "content/scripts/ng-file-upload-shim.min.js",
+        "content/scripts/ng-file-upload.js",
+        "content/scripts/ng-file-upload.min.js",
+        "nuget.sh"
+      ]
+    },
     "Google.Api.Gax/3.0.0": {
       "sha512": "jDXWaxeOjzUmaFBtEaGuWZmIl6CkR3yRrFuiMPFL9YNR6TWA4EZXl9K8mxae1fi7Z7H0j1CRfyAt2iZlomk9bw==",
       "type": "package",
@@ -7276,26 +7295,29 @@
         "system.reflection.nuspec"
       ]
     },
-    "System.Reflection.Emit/4.3.0": {
-      "sha512": "228FG0jLcIwTVJyz8CLFKueVqQK36ANazUManGaJHkO0icjiIypKW7YLWLIWahyIkdh5M7mV2dJepllLyA1SKg==",
+    "System.Reflection.Emit/4.6.0": {
+      "sha512": "qAo4jyXtC9i71iElngX7P2r+zLaiHzxKwf66sc3X91tL5Ks6fnQ1vxL04o7ZSm3sYfLExySL7GN8aTpNYpU1qw==",
       "type": "package",
-      "path": "system.reflection.emit/4.3.0",
+      "path": "system.reflection.emit/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "ThirdPartyNotices.txt",
-        "dotnet_library_license.txt",
-        "lib/MonoAndroid10/_._",
-        "lib/monotouch10/_._",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/monoandroid10/_._",
         "lib/net45/_._",
         "lib/netcore50/System.Reflection.Emit.dll",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Reflection.Emit.dll",
+        "lib/netstandard1.1/System.Reflection.Emit.xml",
         "lib/netstandard1.3/System.Reflection.Emit.dll",
-        "lib/xamarinios10/_._",
+        "lib/netstandard2.0/System.Reflection.Emit.dll",
+        "lib/netstandard2.0/System.Reflection.Emit.xml",
+        "lib/netstandard2.1/_._",
         "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
+        "ref/monoandroid10/_._",
         "ref/net45/_._",
+        "ref/netcoreapp2.0/_._",
         "ref/netstandard1.1/System.Reflection.Emit.dll",
         "ref/netstandard1.1/System.Reflection.Emit.xml",
         "ref/netstandard1.1/de/System.Reflection.Emit.xml",
@@ -7307,9 +7329,16 @@
         "ref/netstandard1.1/ru/System.Reflection.Emit.xml",
         "ref/netstandard1.1/zh-hans/System.Reflection.Emit.xml",
         "ref/netstandard1.1/zh-hant/System.Reflection.Emit.xml",
+        "ref/netstandard2.0/System.Reflection.Emit.dll",
+        "ref/netstandard2.0/System.Reflection.Emit.xml",
+        "ref/netstandard2.1/_._",
         "ref/xamarinmac20/_._",
-        "system.reflection.emit.4.3.0.nupkg.sha512",
-        "system.reflection.emit.nuspec"
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.dll",
+        "runtimes/aot/lib/netcore50/System.Reflection.Emit.xml",
+        "system.reflection.emit.4.6.0.nupkg.sha512",
+        "system.reflection.emit.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Reflection.Emit.ILGeneration/4.3.0": {
@@ -9576,7 +9605,9 @@
       "Microsoft.VisualStudio.Web.CodeGeneration.Utils >= 3.1.2",
       "PushoverNET >= 1.0.28",
       "Select.Pdf.NetCore >= 20.1.0",
-      "Tesseract >= 3.3.0"
+      "System.Reflection.Emit >= 4.6.0",
+      "Tesseract >= 3.3.0",
+      "angular-file-upload >= 12.2.13"
     ]
   },
   "packageFolders": {
@@ -9664,9 +9695,17 @@
             "target": "Package",
             "version": "[20.1.0, )"
           },
+          "System.Reflection.Emit": {
+            "target": "Package",
+            "version": "[4.6.0, )"
+          },
           "Tesseract": {
             "target": "Package",
             "version": "[3.3.0, )"
+          },
+          "angular-file-upload": {
+            "target": "Package",
+            "version": "[12.2.13, )"
           }
         },
         "imports": [
