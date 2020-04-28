@@ -46,7 +46,8 @@ namespace IST440Team3.Models
             Document document = CreateDocument(translationInput, caseNumber, evidenceNumber);
             document.UseCmykColor = true;
             const bool unicode = false;
-            //const PdfFontEmbedding embedding = PdfFontEmbedding.Always;   PDFDocumentRenderer no longer requires PDFFontEmbedding
+            //const PdfFontEmbedding embedding = PdfFontEmbedding.Always;  
+            //PDFDocumentRenderer no longer requires PDFFontEmbedding
 
             PdfDocumentRenderer pdfRenderer = new PdfDocumentRenderer(unicode);
 

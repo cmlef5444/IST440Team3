@@ -10,14 +10,14 @@ namespace IST440Team3.Models
 {
     public class Pushover
     {
-        public Pushover(string filename)
+        public Pushover(int caseNumber, int evidenceNumber)
         {
             var parameters = new NameValueCollection {
-                { "token", "APP_TOKEN" },   //Shermann: add api token
-                { "user", "USER_KEY" },     //Shermann: add user key
-              //  { "title", "this is our Title" }, //not sure about what it would be
-                { "message", "Your Cipher and/or Translation is complete." },
-                { "attachment", filename }
+                { "token", "a4uc2ktpkdjigwmqbh5oheippnts23" },   //API Token
+                { "user", "uu8xjohkzu35oocs4mj5xnemru8ppo" },     //pushover address: vhpftxh56f@pomail.net
+                { "title", "Nittany Solutions: Decryption" }, 
+                { "message", "Your Cipher and/or Translation for Case Number #" + caseNumber + " Evidence # " + evidenceNumber + " is complete." },
+                //{ "attachment", filename }    //Removed to maintain chain of evidence
             };
 
             using (var client = new WebClient())

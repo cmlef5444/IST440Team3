@@ -57,7 +57,6 @@ namespace IST440Team3.Ocr
                         CreateNoWindow = true,
                         UseShellExecute = false
                     };
-
                     using (var ps = Process.Start(info))
                     {
                         ps.WaitForExit();
@@ -79,21 +78,7 @@ namespace IST440Team3.Ocr
                 {
                     Directory.Delete(tempPath, true);
                 }
-
-
-
-
             }
-
-
-
-
-
-
-
-
-
-
             return output;
         }
         private static void WriteInputFiles(Stream[] inputStreams, string tempPath, string tempInputFile)

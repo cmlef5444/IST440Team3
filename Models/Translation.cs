@@ -10,22 +10,19 @@ namespace IST440Team3.Models
 {
     public class Translation
     {
-
         ArrayList inputArray = new ArrayList();
         ArrayList outputArray = new ArrayList();
 
-        public string OrigionalLanguage { get; set; }
-        
+        public string OrigionalLanguage { get; set; }        
         public Translation()
         {
-           //OrigionalLanguage = "Spanish"; //Testing variable
+           //OrigionalLanguage = "Spanish"; //FIX_ME Testing variable, omit on final
         }
 
         public ArrayList TranslateText(ArrayList inputArray)
         {
-            var client = TranslationClient.Create();           
-
-            //Console.WriteLine("");  //FIX_ME: Console check, remove on final
+            var client = TranslationClient.Create();
+            //Console.WriteLine("");  //FIX_ME: Console check, omit on final
 
             foreach (string text in inputArray)
             {
@@ -33,8 +30,8 @@ namespace IST440Team3.Models
                 try
                 {
                     var response = client.TranslateText(text, LanguageCodes.English, DetectLanguage(text).Language);
-                    //Console.WriteLine("translation text " + response.TranslatedText);   //FIX_ME: Console check, remove on final
-                    outputArray.Add("Detected Language: " + DetectLanguage(text).Language + ", Outputed Text:" + response.TranslatedText.ToString()); //"@" is removed by pdf document code
+                    //Console.WriteLine("translation text " + response.TranslatedText);   //FIX_ME: Console check, omit on final
+                    outputArray.Add("Detected Language: " + DetectLanguage(text).Language + ", Outputed Text:" + response.TranslatedText.ToString());                                                                                                           
                 }
                 catch (Google.GoogleApiException e) { } //Catches "bad" language checks from the "gibberish" text from the Ceaser Cipher                
             }
@@ -45,7 +42,7 @@ namespace IST440Team3.Models
         {
             TranslationClient client = TranslationClient.Create();
             var detection = client.DetectLanguage(text);
-            //Console.WriteLine($"{detection.Language}\tConfidence: {detection.Confidence}");   //FIX_ME: Console check, remove on final
+            //Console.WriteLine($"{detection.Language}\tConfidence: {detection.Confidence}");   //FIX_ME: Console check, omit on final
 
             return detection;
         }

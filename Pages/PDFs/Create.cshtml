@@ -7,19 +7,25 @@
 
 <h1>Create</h1>
 
-<p> This window is where yoo will provide all the documentation to go along with the file to be decypted.
+<>
+    This window is where you will provide all the documentation to go along with the file to be decypted.
     <br />
+    <br /> File Path: path to the assoicate fiel to be Decrypted and Translated
+    <br />          Example => (Drive name):\(Folder paths)\(File)
+    <br />          Example => C:\TempFolder\input-sample-image.png
     <br /> Case Number: the assoicated Case/File number assoicaed with the evidence to be uploaded.
     <br /> Output Language: The language you wish it to output as.
     <br />
     <br /> Instructions
-    <br />  1. Enter the Case Number
-    <br />  2. Choose the language to output as
-    <br />  3. Upload File
-    <br />  4. Submit  
+    <br />  1. Enter File Path
+    <br />  2. Enter the Case Number
+    <br />  3. Enter teh Evidence Number
+    <br />  4. Choose the language to output as (Default is English)
+    <br />  5. Submit
     <br />
-    <br/ /> Please note that the origional language must be added after human verification in the edit screen
-    </p>
+    <br /> Please note that the origional language must be added after human verification in the edit screen
+    <br /> Furthermore, only text that might be able to be identified as a language is outputed in to the PDF file, therefore there is a maximum of 26 different versions, but not guarenteed for that amount
+
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -47,8 +53,9 @@
             </div>
             <div class="form-group">
                 <label asp-for="Transformation.OutputLanguage" class="control-label"></label>
-                <input asp-for="Transformation.OutputLanguage" class="form-control" />
+                <input asp-for="Transformation.OutputLanguage" class="form-control" value="English"/>
                 <span asp-validation-for="Transformation.OutputLanguage" class="text-danger"></span>
+                
 
             @* <div method="post" enctype="multipart/form-data">
                 <input type="file" name="file" />

@@ -15,9 +15,11 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using IST440Team3.Controllers;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IST440Team3
 {
+    [Authorize]
     public class Startup
     {
         public Startup(IConfiguration configuration)

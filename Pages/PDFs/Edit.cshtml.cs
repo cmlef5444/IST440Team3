@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IST440Team3.Data;
 using IST440Team3.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IST440Team3.Pages.PDFs
 {
+    [Authorize]
     public class EditModel : PageModel
     {
         private readonly IST440Team3.Data.IST440Team3Context _context;

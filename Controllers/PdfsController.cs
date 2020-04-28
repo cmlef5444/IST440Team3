@@ -26,6 +26,8 @@ namespace IST440Team3.Controllers
 
             //MigraDoc
             varTransformation.ConvertToPdf3(varTranslation.TranslateText(varCipher.Decrypt(service.GetText(System.IO.File.OpenRead(text)))), caseNumber, evidenceNumber);
+            var varPushover = new Pushover(caseNumber, evidenceNumber);
+
 
             //PDFSharp - less features but same company as MigraDoc
             //varTransformation.ConvertToPdf2(varTranslation.TranslateText(varCipher.Decrypt(service.GetText(System.IO.File.OpenRead(text)))), caseNumber, evidenceNumber);

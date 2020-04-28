@@ -8,9 +8,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using IST440Team3.Data;
 using IST440Team3.Models;
 using IST440Team3.Controllers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IST440Team3.Pages.PDFs
 {
+    [Authorize]
     public class CreateModel : PageModel
     {
         private readonly IST440Team3.Data.IST440Team3Context _context;
